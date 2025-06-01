@@ -32,7 +32,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_8sIl4T8yEfC6H65f39zfkw" name="00:00:05" content="5000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_8sIl4j8yEfC6H65f39zfkw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_9GpssD80EfC6H65f39zfkw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_pgvLID82EfC6H65f39zfkw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_8sIl5D8yEfC6H65f39zfkw">
             <inputs xmi:type="process:ContractInput" xmi:id="_OZqQID82EfC6H65f39zfkw" name="solicitudInput" type="COMPLEX" dataReference="solicitud" createMode="false">
@@ -100,7 +100,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_8sImET8yEfC6H65f39zfkw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_9GpssT80EfC6H65f39zfkw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_pgvLIT82EfC6H65f39zfkw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_8sImEz8yEfC6H65f39zfkw">
         <targetForm xmi:type="expression:Expression" xmi:id="_8sImFD8yEfC6H65f39zfkw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -116,7 +116,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_8sImGz8yEfC6H65f39zfkw" name="Si" target="_8sIl6j8yEfC6H65f39zfkw" source="_8sIl5j8yEfC6H65f39zfkw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8sImHD8yEfC6H65f39zfkw"/>
         <condition xmi:type="expression:Expression" xmi:id="_8sImHT8yEfC6H65f39zfkw" name="newScript()" content="solicitud.estaAprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kaYVUD82EfC6H65f39zfkw" name="solicitud" dataType="_8sImRj8yEfC6H65f39zfkw" className="com.company.model.SolicitudVacaciones"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_08TdQD87EfC6H65f39zfkw" name="solicitud" dataType="_8sImRj8yEfC6H65f39zfkw" className="com.company.model.SolicitudVacaciones"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8sImHj8yEfC6H65f39zfkw" name="No" target="_8sIl8z8yEfC6H65f39zfkw" source="_8sIl5j8yEfC6H65f39zfkw" isDefault="true">
