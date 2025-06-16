@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "ac5eb525-76e5-4074-9a95-f3aeff0b9f09",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748829905432,
+  "lastUpdate" : 1750061168590,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -513,7 +513,7 @@
     "solicitudVacaciones" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"findBySolicitanteId [com.company.model.SolicitudVacaciones]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"findBySolicitanteId\",\"displayName\":\"findBySolicitanteId\"},\"id\":\"com.company.model.SolicitudVacaciones\",\"filters\":[{\"name\":\"solicitanteId\",\"type\":\"LONG\",\"collection\":false,\"value\":\"``\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"findBySolicitanteId [com.company.model.SolicitudVacaciones]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"findBySolicitanteId\",\"displayName\":\"findBySolicitanteId\"},\"id\":\"com.company.model.SolicitudVacaciones\",\"filters\":[{\"name\":\"solicitanteId\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{sessionInfo.user_id}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     },
@@ -529,12 +529,12 @@
       "value" : [
         "if($data.hasOwnProperty('solicitudVacaciones') && $data.solicitudVacaciones) {",
         "  for (let solicitud of $data.solicitudVacaciones) {",
-        "    if(solicitud.esAprobada)  {",
-        "      demande.esAprobadaEtiqueta = \"Aprobada\";",
-        "    } else if(solicitud.esAprobada === false) {",
-        "      demande.esAprobadaEtiqueta = \"Rechazada\";",
+        "    if(solicitud.estaAprobado)  {",
+        "      solicitud.esAprobadaEtiqueta = \"Aprobada\";",
+        "    } else if(solicitud.estaAprobado === false) {",
+        "      solicitud.esAprobadaEtiqueta = \"Rechazada\";",
         "    } else {",
-        "      demande.esAprobadaEtiqueta = \"En curso\";",
+        "      solicitud.esAprobadaEtiqueta = \"En curso\";",
         "    }",
         "  }",
         "}",
@@ -551,7 +551,10 @@
       "exposed" : false
     },
     "nuevaSolicitudVacaciones" : {
-      "type" : "constant",
+      "type" : "json",
+      "value" : [
+        "{}"
+      ],
       "exposed" : false
     }
   },

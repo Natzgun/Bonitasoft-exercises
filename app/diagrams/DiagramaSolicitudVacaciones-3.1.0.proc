@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:connectorconfiguration="http://www.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_f75E4D9DEfC6H65f39zfkw" name="DiagramaSolicitudVacaciones" version="3.1.0" bonitaModelVersion="8">
-    <elements xmi:type="process:Pool" xmi:id="_f75E4T9DEfC6H65f39zfkw" name="Pool" version="3.1.0">
+    <elements xmi:type="process:Pool" xmi:id="_f75E4T9DEfC6H65f39zfkw" name="SolicitudVacaciones" version="3.1.0">
       <elements xmi:type="process:Lane" xmi:id="_f75E4j9DEfC6H65f39zfkw" name="Solicitante" actor="_f75FTD9DEfC6H65f39zfkw">
         <elements xmi:type="process:StartEvent" xmi:id="_f75E4z9DEfC6H65f39zfkw" name="Ingresar solicitud" outgoing="_f75FMz9DEfC6H65f39zfkw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_f75E5D9DEfC6H65f39zfkw" name="" content="" returnTypeFixed="true"/>
